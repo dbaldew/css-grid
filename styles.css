@@ -1,1 +1,69 @@
 /*Maak hier jouw CSS!*/
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFEFDB;
+
+}
+.grid {
+    display: grid;
+    margin: 16px;
+    grid-gap: 16px;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.a {
+    display: grid;
+    background-color: #BA3B44;
+    color: #ffffff;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.b {
+    display: grid;
+    background-color: #BA3B44;
+    color: #ffffff;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    g
+
+}
+.c {
+    display: grid;
+    background-color: #BA3B44;
+    color: #ffffff;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+.d {
+    display: grid;
+    background-color: #BA3B44;
+    color: #ffffff;
+    justify-content: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+.e {
+    display: grid;
+    background-color: #BA3B44;
+    color: #ffffff;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+.f {
+    display: grid;
+    background-color: #BA3B44;
+    color: #ffffff;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
