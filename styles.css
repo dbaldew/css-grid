@@ -1,78 +1,42 @@
 /*Maak hier jouw CSS!*/
-* {
-    padding: 0px;
-    margin: 0px;
-    background-color: #FFEFDB;
-
-
+*{
+    padding:0px;
+    margin:0px;
 }
+
 .grid {
     display: grid;
-    color: #ffffff;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(12, 50px);
-    margin: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 190px 50px auto 50px;
     grid-gap: 16px;
+    grid-template-areas:
+            "a c c"
+            "b c c"
+            "b e d"
+            "b e ."
+            "f f f";
 }
-
-#a {
-    display: grid;
+.item{
+    display:grid;
     background-color: #BA3B44;
-    justify-content: center;
-    align-content: center;
-    grid-column: 1/2;
-    grid-row: 1/2
+    padding: 20px;
+    color: #fff;
 }
-#b {
-    display: grid;
-    background-color: #BA3B44;
-    justify-content: center;
-    align-content: center;
-    grid-column: 1/2;
-    grid-row: 2/11;
-    position: relative;
+#a{
+    grid-area: a;
 }
-#b p {
-    display: grid;
-    background-color: #BA3B44;
-    position: absolute;
-
+#b{
+    grid-area: b;
 }
-#c {
-    display: grid;
-    background-color: #BA3B44;
-    justify-content: center;
-    align-content: center;
-    grid-column: 2/4;
-    grid-row:1/6;
-
-
+#c{
+    grid-area: c;
 }
-#d {
-    display: grid;
-    background-color: #BA3B44;
-    justify-content: center;
-    align-content: center;
-    grid-column: 3/4;
-    grid-row: 6/8;
-    grid-template-columns: minmax(50px,auto);
-
+#d{
+    grid-area: d;
 }
-#e {
-    display: grid;
-    background-color: #BA3B44;
-    justify-content: center;
-    align-content: center;
-    grid-column: 2/3;
-    grid-row: 6/11;
-
+#e{
+    grid-area: e;
 }
-#f {
-    display: grid;
-    background-color: #BA3B44;
-    justify-content: center;
-    align-content: center;
-    grid-column: 1/4;
-    grid-row: 11/12
+#f{
+    grid-area: f;
 }
-
